@@ -1,0 +1,24 @@
+{
+  "job_id": "example.ex04.cron",
+  "active": "false",
+  "trigger": {
+    "type": "cron",
+    "cmd": "*/10 * * * * *"
+  },
+  "data_in": {
+    "type": "input"
+  },
+  "data_transform": {
+    "type": "transform",
+    "param": {
+      "script": "data={};data.msg=new Date().getTime()"
+    }
+  },
+  "data_out": {
+    "type": "dweet",
+    "param": {
+      "thing": "kamron-example-02"
+    }
+  },
+  "_vo": "example"
+}
