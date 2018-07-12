@@ -15,7 +15,7 @@
   "data_transform": {
     "type": "transform",
     "param": {
-      "script": "data.msg = src.data.msg + new Date().getTime();data.ts=new Date().getTime()"
+      "script": "data.msg = src.data.msg + String(Math.floor(Date.now() / 1000));data.ts=String(Math.floor(Date.now() / 1000))"
     }
   },
   "data_out": {

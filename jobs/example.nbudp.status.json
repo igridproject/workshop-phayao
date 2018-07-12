@@ -1,0 +1,31 @@
+{
+  "job_id": "example.nbudp.status",
+  "active": "true",
+  "trigger": {
+    "type": "nbudp",
+    "keyname": "nbstatus"
+  },
+  "data_in": {
+    "type": "input"
+  },
+  "data_transform": {
+    "type": "transform",
+    "param": {
+      "script": [
+        "data = {}",
+        "data.msg = src.data.message",
+        "data.csq = src.data.message.split(',')[0]",
+        "data.rssi = src.data.message.split(',')[1]",
+        "data.cnt = src.data.message.split(',')[2]",
+        "data.ts = String(Math.floor(Date.now() / 1000))"
+      ]
+    }
+  },
+  "data_out": {
+    "type": "dweet",
+    "param": {
+      "thing": "kamron-example-nbstatus"
+    }
+  },
+  "_vo": "example"
+}
