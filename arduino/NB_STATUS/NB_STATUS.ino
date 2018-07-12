@@ -16,11 +16,10 @@ unsigned long previousMillis = 0;
 long cnt = 0;
 void setup()
 { 
-  AISnb.debug = false;
+  AISnb.debug = true;
   
   Serial.begin(9600);
-  serial_connection.begin(9600);
-  
+
   AISnb.setupDevice(serverPort);
 
   String ip1 = AISnb.getDeviceIP();  
