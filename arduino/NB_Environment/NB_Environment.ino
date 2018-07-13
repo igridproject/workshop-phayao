@@ -11,7 +11,7 @@ String apnName = "devkit.nb";
 //BigStream Config
 String serverIP = "203.185.71.41"; // Your Server IP
 String serverPort = "19150"; // Your Server Port
-String bsKey = "example:nbenv"; // BigStream Job KeyName ( VONAME:KEYNAME )
+String bsKey = "<VONAME>:nbenv"; // BigStream Job KeyName ( VONAME:KEYNAME )
 String udpData = "";
 
 AIS_NB_BC95 AISnb;

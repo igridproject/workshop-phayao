@@ -1,24 +1,22 @@
 {
-  "job_id": "example.ex02.push2dweet",
+  "job_id": "example.ex05.linenotify",
   "active": "true",
   "trigger": {
     "type": "http",
-    "appkey": "ex02",
+    "appkey": "line",
     "method": "get"
   },
   "data_in": {
-    "type": "input",
-    "param": {
-      "object": "httpdata"
-    }
+    "type": "input"
   },
   "data_transform": {
     "type": "noop"
   },
   "data_out": {
-    "type": "dweet",
+    "type": "line-notify",
     "param": {
-      "thing": "myname-example-msg"
+      "token": "LINE-TOKEN",
+      "message": "${src.data.msg}"
     }
   },
   "_vo": "example"

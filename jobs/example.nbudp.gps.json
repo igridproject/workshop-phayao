@@ -25,7 +25,7 @@
   "data_out": {
     "type": "dweet",
     "param": {
-      "thing": "kamron-example-nbgps"
+      "thing": "myname-example-nbgps"
     }
   },
   "_vo": "example"

@@ -17,7 +17,7 @@
   "data_out": {
     "type": "dweet",
     "param": {
-      "thing": "kamron-example-02"
+      "thing": "myname-example-msg"
     }
   },
   "_vo": "example"

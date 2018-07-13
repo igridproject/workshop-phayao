@@ -20,7 +20,7 @@
   "data_out": {
     "type": "dweet",
     "param": {
-      "thing": "kamron-example-udp"
+      "thing": "myname-example-udp"
     }
   },
   "_vo": "example"
